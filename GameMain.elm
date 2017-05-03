@@ -162,7 +162,7 @@ monster dt himouto =
       else
         if newRound then 100
         else himouto.monster - himouto.speed,
-        speed = if newRound then himouto.speed + 0.00001 else himouto.speed
+        speed = if newRound then himouto.speed + 0.01 else himouto.speed
   }
 
 
