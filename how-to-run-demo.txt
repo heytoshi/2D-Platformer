@@ -1,3 +1,0 @@
-1) Open cmd and go the project directory
-2) type "elm-reactor.exe"
-3) open browser and go to http://localhost:8000/GameMain.elm
