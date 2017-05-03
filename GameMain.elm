@@ -150,7 +150,7 @@ step msg himouto = case msg of
         WindowSize size ->
             ( { himouto | resolutionWindow = size }
             , Cmd.none )
-
+--draws the monster and enables collision
 monster : Float -> Character -> Character
 monster dt himouto =
   let
@@ -166,7 +166,7 @@ monster dt himouto =
   }
 
 
-
+--door collision for doors on the LHS
 door : Float -> Character -> Character
 door dt himouto =
     let
@@ -191,7 +191,7 @@ teleport dt himouto =
   { himouto |
       alive = maybeAlive
   }
-
+--doors for the rhs
 door2 : Float -> Character -> Character
 door2 dt himouto =
     let
@@ -242,7 +242,7 @@ teleport3 dt himouto =
   { himouto |
       alive3 = maybeAlive3
   }
-
+--enables collision for the cola
 cola : Float -> Character -> Character
 cola dt himouto =
     let
@@ -283,7 +283,7 @@ death dt himouto =
   }
 
 
-
+--the skeletons on the LHS
 skeleton : Float -> Character -> Character
 skeleton dt himouto =
     let
@@ -297,7 +297,7 @@ skeleton dt himouto =
           else himouto.skeleton - himouto.speed2,
           speed2 = if newRound then himouto.speed2 else himouto.speed2
    }
-
+--enables collision for the LHS skeleton walls
 skeletonDeath : Float -> Character -> Character
 skeletonDeath dt himouto =
   let
@@ -309,7 +309,7 @@ skeletonDeath dt himouto =
       skelBool = maybeSkel,
       extraScore = if maybeSkel then himouto.extraScore else himouto.extraScore + 1
   }
-
+--the skeletons on the RHS
 skeleton2 : Float -> Character -> Character
 skeleton2 dt himouto =
     let
@@ -322,7 +322,7 @@ skeleton2 dt himouto =
           if newRound then 199
           else himouto.skeleton2 - himouto.speed
    }
-
+--enables collision for the RHS skeleton walls
 skeletonDeath2 : Float -> Character -> Character
 skeletonDeath2 dt himouto =
   let
