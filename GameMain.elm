@@ -124,7 +124,7 @@ step msg himouto = case msg of
                 |> walk himouto.keyClick
                 |> physics (dt / 10)
                 |> death dt
-            --    |> monster dt
+                |> monster dt
                 |> death2 dt
                 |> door dt
                 |> teleport dt
