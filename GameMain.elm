@@ -104,7 +104,6 @@ himouto =
 pressKey : Int -> Keyboard.KeyCode -> Keys -> Keys
 pressKey scale key keyClick =
     case key of
-      --CSS keyboard values
         37 -> { keyClick | x = -scale } --left arrows
         38 -> { keyClick | y = scale } --up arrows
         39 -> { keyClick | x = scale } --right arrows
