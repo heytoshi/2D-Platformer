@@ -1,5 +1,6 @@
  Language: Elm
  Project: 2D video game
+ By Tsogt Enkhbat
  
  //About the project
  
@@ -13,6 +14,7 @@
   
 
 //Tutorial
+    
     Click the link to play the game "https://htmlpreview.github.io/?https://github.com/heytoshi/Hello/blob/master/demo.html"
 
     Use arrow keys to move the character
