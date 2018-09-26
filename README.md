@@ -1,5 +1,7 @@
  Language: Elm
+ 
  Project: 2D video game
+ 
  By Tsogt Enkhbat
  
  Click the link to play the game "https://htmlpreview.github.io/?https://github.com/heytoshi/Hello/blob/master/demo.html"
