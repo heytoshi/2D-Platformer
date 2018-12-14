@@ -1,5 +1,5 @@
 
-// Portfolio
+# Portfolio
 
 This particular assignment was chosen because the goal of the project was to show whether if the students could utilize the language interpretation skills that was taught throughout the semester. Unlike most assignments, this one was more time consuming and challenging. The project was implemented in Elm, which was a language that was never taught before or during the class period. Since, the amount of time required for the assignment was long, it helped to reach some of the Computer Science learning goals.
 
